@@ -79,14 +79,8 @@ def get_image_download_script(caller):
               'width: width, filename: filename}});'
               '}};' +
               check_start +
-              'if(confirm(\'Do you want to save this image as '
-              '{filename}.{format}?\\n\\n'
-              'For higher resolution images and more export options, '
-              'consider making requests to our image servers. Type: '
-              'help(py.image) for more details.'
-              '\')) {{'
               'downloadimage(\'{format}\', {height}, {width}, '
-              '\'{filename}\');}}' +
+              '\'{filename}\');' +
               check_end +
               '</script>'
               )
